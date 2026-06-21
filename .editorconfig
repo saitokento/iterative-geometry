@@ -1,0 +1,99 @@
+# https://unity.com/how-to/formatting-best-practices-c-scripting-unity#formatting-your-code
+
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+[*.cs]
+charset = utf-8
+trim_trailing_whitespace = true
+
+# Expression-bodied properties
+csharp_style_expression_bodied_properties = when_on_single_line:suggestion
+
+# Auto-implemented property
+csharp_style_expression_bodied_properties = when_on_single_line:suggestion
+csharp_style_expression_bodied_accessors = when_on_single_line:suggestion
+
+# Brace or indentation style
+csharp_new_line_before_open_brace = all
+csharp_indent_braces = false
+csharp_indent_block_contents = true
+csharp_new_line_before_else = true
+csharp_new_line_before_catch = true
+csharp_new_line_before_finally = true
+
+# Decide on a uniform indentation
+indent_style = space
+indent_size = 4
+tab_width = 4
+
+# Don't omit braces
+csharp_prefer_braces = true:warning
+csharp_preserve_single_line_statements = false
+csharp_preserve_single_line_blocks = false
+
+# Standardize switch statements
+csharp_indent_switch_labels = true
+csharp_indent_case_contents = true
+csharp_indent_case_contents_when_block = true
+
+# Add spaces
+csharp_space_around_binary_operators = before_and_after
+
+# Spacing after a comma
+csharp_space_after_comma = true
+csharp_space_before_comma = false
+csharp_space_after_semicolon_in_for_statement = true
+csharp_space_before_semicolon_in_for_statement = false
+
+# No spacing after parenthesis
+csharp_space_between_method_call_parameter_list_parentheses = false
+csharp_space_between_method_declaration_parameter_list_parentheses = false
+csharp_space_between_parentheses = false
+
+# No space between a function and parenthesis
+csharp_space_between_method_call_name_and_opening_parenthesis = false
+csharp_space_between_method_declaration_name_and_open_parenthesis = false
+
+# Avoid spaces inside brackets
+csharp_space_between_square_brackets = false
+csharp_space_between_empty_square_brackets = false
+
+# Spacing before flow control conditions
+csharp_space_after_keywords_in_control_flow_statements = true
+
+# Spacing with comparison operators
+csharp_space_around_binary_operators = before_and_after
+
+csharp_space_after_cast = false
+csharp_space_before_open_square_brackets = false
+csharp_space_between_empty_method_call_parentheses = false
+csharp_space_between_empty_method_declaration_parentheses = false
+
+# Keep lines short.
+max_line_length = 120
+
+# Maintain indentation/hierarchy
+csharp_indent_block_contents = true
+csharp_indent_case_contents = true
+csharp_indent_case_contents_when_block = true
+csharp_indent_switch_labels = true
+
+dotnet_sort_system_directives_first = true
+dotnet_separate_import_directive_groups = false
+
+dotnet_diagnostic.IDE0055.severity = warning
+
+# Tab indentation for Makefiles
+[Makefile]
+indent_style = tab
+
+# Specific settings for JSON, .asmdef and .asmref files
+[*.{json,asmdef,asmref}]
+indent_style = space
+indent_size = 2
